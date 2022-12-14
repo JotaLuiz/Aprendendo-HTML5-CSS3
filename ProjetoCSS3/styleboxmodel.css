@@ -37,3 +37,17 @@ Modelo de caixa
 h2 {
     margin: 0px;
 }
+
+/*------------------------------------------------------Aula Elementos Flutuantes----------------------------------------------------------*/
+
+.conteudoflutuante {
+    background: rgb(163, 130, 253);
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+}
+.clear {
+    clear: both;
+}
