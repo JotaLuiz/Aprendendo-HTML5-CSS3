@@ -22,7 +22,7 @@
         </div>
     </nav>
     <!-- começo do conteúdo-->
-    <section>
+    <section id="sua_div">
         <div id="conteudo">
             <h1>Campanhas Publicitárias</h1>
             <img src="imagens/foto1.png" class="img-campanha">
@@ -38,13 +38,26 @@
                 exercitationem quae, animi ullam quo id sint nihil sed culpa autem tempora rerum distinctio natus facere
                 expedita?
             </p>
+         
         </div>
     </section><!-- fim do conteúdo-->
+    <button id="btn">Clique para imprimir</button>
     <footer>
         <div>
             <h4 class="centralizar">Todos os direitos reservados</h4>
         </div>
     </footer>
+
+    <script>
+    document.getElementById('btn').onclick = function() {
+        var conteudo = document.getElementById('sua_div').innerHTML,
+            tela_impresso = window.open('_blank');
+
+        tela_impresso.document.write(conteudo);
+        tela_impresso.window.print();
+        tela_impresso.window.close();
+    };
+    </script>
 </body>
 
 </html>
